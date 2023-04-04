@@ -14,8 +14,12 @@ public class item_carrito {
 		
 		//agregar al carrito
 		ArrayList<String> persona1 = new ArrayList<String>();
+		ArrayList<Integer> persona1cant = new ArrayList<Integer>();
 		persona1.add("vino");
+		persona1cant.add ( 4 );
 		persona1.add("cocacola");
+		persona1cant.add ( 2 );
+		
 		
 		System.out.println("meracadera de persona1 : "+persona1);
 		System.out.println("la cantidad de items son : "+ persona1.size());
