@@ -2,8 +2,6 @@ package Ordenadormum;
 import java.util.Arrays;
 //import java.lang.reflect.Array;
 import java.util.Scanner;
-import java.util.stream.IntStream;
-import java.util.stream.Stream;
 
 //import java.util.List;
 
@@ -12,9 +10,10 @@ import java.util.stream.Stream;
 public class Main {
 
 	public static void main(String[] args) {
-		
+		// este metodo busca traer un string leido del teclado
 		recibirstring();
 		String datonum2 = null;
+		// en este se vuelve a traer el string pero se le asigna a un retorno
 		datonum2 = recibirstring();
 		ordenar(datonum2);	
 		
@@ -59,22 +58,39 @@ public class Main {
 		            }
 		        }
 		        
-		        System.out.println(Arrays.toString(intArray));
+		       
 			
 		//.............................................................................................	
+		        
+		// arreglar de menor a mayor los numeros
+		//.......................................................
+		 
+		        for(int i2 = 0; i2 < intArray.length ; i2++){
+		        	int[] intArray1 = new int[m];
+		        	intArray1 = intArray;
+		           int  menor = intArray1[0];
+
+		            if (intArray1[i2] < menor){
+		                menor = intArray1[i2];
+		            }
+		            else{
+		                if (intArray1[i2] > menor){
+		                 menor = menor;
+		                }      
+		            }
+		        }
+		        
+		        
+		//.......................................................
+		        
+		  //       System.out.println(Arrays.toString(intArray));
 		
-		System.out.println(" se evalua los datos :" + dato1[i]);
+		// System.out.println(" se evalua  datos :" + dato1[i]);
+		
 		
 		
 		}
 		
-		
-		//List<String> orden = Array.asList(daton.split("\\s*,\\s*"));
-	/*	for(String dato2:dato1) {
-			System.out.println(dato1[0]);
-			//System.out.println(dato2);
-		}
-		*/
 		
 	}
 
